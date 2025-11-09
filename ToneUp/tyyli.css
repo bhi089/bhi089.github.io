@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Trebuchet MS, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Ylätunniste */
+header {
+  background-color: #e34f00;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Navigointi */
+nav {
+  background-color: #131313;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: rgb(255, 254, 254);
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Pääsisältö */
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.973);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+/* Alapalkki */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 13px;
+}
+/* Näytöt, jotka ovat vähintään 600px leveitä (tabletit) */
+@media (min-width: 600px) {
+  nav a {
+    padding: 16px 25px;
+    font-size: 1.1em;
+  }
+
+  main {
+    padding: 30px;
+  }
+}
+
+/* Näytöt, jotka ovat vähintään 900px leveitä (tietokoneet) */
+@media (min-width: 900px) {
+  body {
+    background-color: #131313;
+  }
+
+  nav {
+    justify-content: center;
+    padding-left: 50px;
+  }
+
+  nav a {
+    padding: 16px 30px;
+  }
+
+  main {
+    max-width: 1000px;
+    margin-top: 30px;
+    border-radius: 8px;
+  }
+} 
